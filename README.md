@@ -1,104 +1,164 @@
-# Windows 11 Troubleshooting Lab
+# Windows 11 Performance Troubleshooting Lab
+
+**IT Support | Windows 11 | System Diagnostics | Performance Monitoring**
 
 ## Project Overview
 
-This repository documents hands-on Windows 11 troubleshooting exercises performed in a virtualized environment using Oracle VirtualBox.
+This project demonstrates foundational Windows 11 system diagnostics and performance monitoring techniques relevant to entry-level IT Support and Help Desk environments.
 
-The purpose of this project is to develop practical IT support skills by simulating common end-user problems, investigating their causes, implementing solutions, and verifying system functionality.
+Using a Windows 11 virtual machine configured in Oracle VirtualBox, I conducted a structured assessment of system performance by examining CPU utilization, memory consumption, disk activity, and running processes.
 
-Each lab follows a structured troubleshooting methodology similar to procedures used by IT Help Desk technicians.
+The objective was to establish baseline performance measurements, develop familiarity with Windows diagnostic utilities, and strengthen my ability to recognize potential system performance bottlenecks.
+
+This hands-on lab supports my technical development in Windows troubleshooting, system administration fundamentals, and CompTIA A+ certification preparation.
+
+---
+
+## Project Objectives
+
+* Establish baseline performance measurements within a Windows 11 environment.
+* Analyze CPU, memory, and disk resource utilization.
+* Identify active applications and background processes consuming system resources.
+* Gain practical experience navigating Windows Task Manager.
+* Recognize performance indicators commonly associated with system slowdowns.
+* Document technical observations through organized screenshots and analysis.
+
+---
 
 ## Lab Environment
 
-* **Operating System:** Windows 11
-* **Virtualization Platform:** Oracle VirtualBox
-* **Virtual Machine RAM:** 6 GB
-* **Virtual Processors:** 2
-* **Tools:** Windows Task Manager, PowerShell, Windows troubleshooting utilities
+| Component               | Configuration                          |
+| ----------------------- | -------------------------------------- |
+| Operating System        | Windows 11                             |
+| Virtualization Platform | Oracle VirtualBox                      |
+| Environment             | Windows 11 Virtual Machine             |
+| Primary Diagnostic Tool | Windows Task Manager                   |
+| Monitoring Categories   | CPU, Memory, Disk, Processes           |
+| Documentation           | Screenshots and Technical Observations |
 
-## Troubleshooting Methodology
+---
 
-Each exercise follows five stages:
+## System Performance Analysis
 
-1. **Identify the Problem** — Gather information about the reported issue.
-2. **Investigate** — Examine system performance, processes, and relevant settings.
-3. **Determine the Cause** — Identify potential sources of the problem.
-4. **Implement a Solution** — Apply appropriate corrective actions.
-5. **Verify and Document** — Confirm the issue is resolved and record findings.
+### 1. CPU Performance Monitoring
 
-## Completed Labs
+**Tool:** Windows Task Manager — Performance Tab
 
-### Lab 001 — Windows Performance Troubleshooting
+Accessed Windows Task Manager to examine CPU utilization and establish a baseline measurement under normal operating conditions.
 
-**Scenario:** A Windows 11 user experiences slow system performance while using multiple browser tabs.
+**Technical Observations:**
 
-**Objective:** Investigate elevated CPU and memory usage, identify resource-intensive processes, and restore normal system performance.
+* CPU utilization remained approximately 1–4% during idle conditions.
+* Reviewed processor activity through real-time performance monitoring.
+* Observed no significant CPU utilization spikes during baseline monitoring.
+* Established a reference measurement for identifying abnormal processor activity.
 
-**Tools Used:** Windows Task Manager, Microsoft Edge
+**Screenshot — CPU Baseline**
 
-**Results:**
+![CPU Performance Baseline](screenshots/01-CPU-Baseline.png)
 
-* Observed CPU utilization reaching approximately 80% during the simulated workload.
-* Identified Microsoft Edge consuming 28.9% CPU and approximately 780 MB RAM.
-* Reduced CPU utilization to approximately 4% by closing unnecessary browser tabs.
-* Verified improved system responsiveness.
+---
 
-Detailed troubleshooting steps and screenshots are documented in the Lab 001 folder.
+### 2. Memory Utilization Analysis
 
-## Skills Demonstrated
+**Tool:** Windows Task Manager — Memory Performance Tab
 
-* Windows 11 troubleshooting
-* CPU and memory performance monitoring
-* Process identification and analysis
-* Resource utilization troubleshooting
-* Virtual machine management
-* Technical documentation
-* Help Desk troubleshooting methodology
+Examined system memory utilization to understand how Windows allocates available RAM to operating system services, background processes, and applications.
 
-## Project Goals
+**Technical Observations:**
 
-This repository will continue to expand with additional Windows troubleshooting scenarios to strengthen practical IT support skills and demonstrate hands-on technical experience.
+* Reviewed overall memory consumption within the virtual machine.
+* Examined available and actively utilized system memory.
+* Analyzed how operating system processes contribute to RAM usage.
+* Documented baseline memory utilization for performance assessment.
+
+**Screenshot — Memory Baseline**
+
+![Memory Utilization Baseline](screenshots/02-Memory-Baseline.png)
+
+---
+
+### 3. Disk Performance Monitoring
+
+**Tool:** Windows Task Manager — Disk Performance Tab
+
+Monitored storage activity to examine disk utilization and understand its relationship to overall operating system responsiveness.
+
+**Technical Observations:**
+
+* Reviewed disk activity under normal operating conditions.
+* Examined storage utilization through Windows performance metrics.
+* Identified relevant indicators for evaluating potential disk performance bottlenecks.
+* Documented baseline disk activity for future performance comparisons.
+
+**Screenshot — Disk Baseline**
+
+![Disk Performance Baseline](screenshots/03-Disk-Baseline.png)
+
+---
+
+### 4. Running Processes and Resource Consumption
+
+**Tool:** Windows Task Manager — Processes Tab
+
+Investigated active applications and background processes to better understand how individual processes contribute to overall system resource utilization.
+
+**Technical Observations:**
+
+* Identified active applications and background processes.
+* Examined CPU and memory consumption across running processes.
+* Reviewed resource utilization to understand the relationship between application activity and system performance.
+* Practiced interpreting process-level performance information relevant to IT troubleshooting.
+
+**Screenshot — Running Processes Baseline**
+
+![Running Processes Baseline](screenshots/04-Processes-Baseline.png)
+
+---
+
+## Findings and Results
+
+The performance assessment provided insight into how Windows 11 manages system resources under normal operating conditions.
+
+**Key Findings:**
+
+* **CPU Performance:** Processor utilization remained approximately 1–4% during idle monitoring, indicating low CPU demand during the observation period.
+* **Memory Management:** Windows Task Manager provided visibility into RAM allocation and system memory consumption.
+* **Disk Activity:** Storage performance metrics were examined to establish an understanding of normal disk behavior.
+* **Process Monitoring:** Active processes were reviewed to understand how applications and background services contribute to resource utilization.
+
+The assessment established baseline measurements and demonstrated the use of Windows diagnostic utilities to evaluate system performance.
+
+These findings reinforce the importance of understanding normal system behavior when investigating potential performance-related issues.
+
+---
+
+## Technical Skills Demonstrated
+
+| Skill                        | Practical Application                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| Windows 11 Administration    | Navigated built-in operating system diagnostic utilities                              |
+| Performance Monitoring       | Examined CPU, memory, and disk utilization                                            |
+| Process Analysis             | Identified running processes and monitored resource consumption                       |
+| System Diagnostics           | Evaluated operating system performance indicators                                     |
+| Virtualization               | Conducted testing within an isolated Windows 11 virtual machine                       |
+| Technical Documentation      | Recorded observations and organized supporting screenshots                            |
+| Troubleshooting Fundamentals | Established baseline measurements for identifying potential performance abnormalities |
+
+---
+
+## Conclusion
+
+This project provided hands-on experience with Windows 11 performance monitoring and foundational system diagnostics.
+
+By systematically examining processor utilization, memory consumption, disk activity, and running processes, I strengthened my understanding of operating system resource management and the diagnostic tools available to IT Support professionals.
+
+The lab reinforced the importance of establishing baseline performance measurements, interpreting system resource utilization, and documenting technical findings.
+
+These skills provide a foundation for diagnosing common Windows performance issues in professional IT Support and Help Desk environments.
 
 ---
 
 **Author:** Jarrett Justice
-**Focus:** IT Support | Help Desk | Cybersecurity
+**Technical Focus:** IT Support | Windows 11 | System Troubleshooting | CompTIA A+
 
-
----
-
-## Screenshots & Supporting Evidence
-
-### Initial System Baseline
-
-**CPU Baseline**
-
-![CPU Baseline](screenshots/01-CPU-Baseline.png)
-
-**Memory Baseline**
-
-![Memory Baseline](screenshots/02-Memory-Baseline.png)
-
-**Disk Baseline**
-
-![Disk Baseline](screenshots/03-Disk-Baseline.png)
-
-**Processes Baseline**
-
-![Processes Baseline](screenshots/04-Processes-Baseline.png)
-
-### Simulated Performance Issue
-
-**CPU Utilization Under Load**
-
-![CPU Under Load](screenshots/05-CPU-Under-Load.png)
-
-**Identifying the Resource-Intensive Process**
-
-![High CPU Processes](screenshots/06-High-CPU-Processes.png)
-
-### Resolution Verification
-
-**CPU Utilization After Corrective Action**
-
-![CPU After Fix](screenshots/07-CPU-After-Fix.png)
