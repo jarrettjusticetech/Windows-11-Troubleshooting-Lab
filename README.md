@@ -63,3 +63,42 @@ This repository will continue to expand with additional Windows troubleshooting 
 
 **Author:** Jarrett Justice
 **Focus:** IT Support | Help Desk | Cybersecurity
+
+
+---
+
+## Screenshots & Supporting Evidence
+
+### Initial System Baseline
+
+**CPU Baseline**
+
+![CPU Baseline](screenshots/01-CPU-Baseline.png)
+
+**Memory Baseline**
+
+![Memory Baseline](screenshots/02-Memory-Baseline.png)
+
+**Disk Baseline**
+
+![Disk Baseline](screenshots/03-Disk-Baseline.png)
+
+**Processes Baseline**
+
+![Processes Baseline](screenshots/04-Processes-Baseline.png)
+
+### Simulated Performance Issue
+
+**CPU Utilization Under Load**
+
+![CPU Under Load](screenshots/05-CPU-Under-Load.png)
+
+**Identifying the Resource-Intensive Process**
+
+![High CPU Processes](screenshots/06-High-CPU-Processes.png)
+
+### Resolution Verification
+
+**CPU Utilization After Corrective Action**
+
+![CPU After Fix](screenshots/07-CPU-After-Fix.png)
